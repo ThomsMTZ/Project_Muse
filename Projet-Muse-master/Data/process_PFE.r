@@ -1,12 +1,12 @@
 rm(list=ls(all=TRUE))
-chemin = "A:/Mes Documents/Telechargement/Projet-Muse-master/Data/"
-annotname ="Geoffrey"
-pays="_Magrheb"
+chemin = "C:/Users/thomas/Documents/GitHub/Project_Muse/Projet-Muse-master/Data/"
+annotname ="Chaikou"
+pays="_France"
 annotfolder = annotname
 
 position = c("TP9","TP10", "AF7", "AF8")
 signal = c("delta","theta", "alpha", "beta","gamma")
-songname = c(paste(annotname,pays,"1",sep=""), paste(annotname,pays,"2",sep=""), 
+songname = c(paste(annotname,pays,"1",sep=""), paste(annotname,pays,"2",sep=""),
              paste(annotname,pays,"3",sep=""),paste(annotname,pays,"4",sep=""))
 
 songnum= length(songname)
@@ -42,17 +42,17 @@ for (j in 1:songnum){
   TP9=matrix(NA,nrow = linenumber, ncol = 6)
   TP9[1,1] <- as.POSIXct(doc[1,1], format="%Y-%m-%d  %H:%M:%S")
   firstnum = as.numeric(TP9[1,1])
-  
+
   TP9[1,1] = 0
   TP9[2:linenumber,1] <- as.POSIXct(doc[2:linenumber,1], format="%Y-%m-%d  %H:%M:%S")
   TP9[2:linenumber,1] = as.numeric(TP9[2:linenumber,1]) - firstnum
-  
+
   TP9[,2]=as.numeric(doc[,2])
   TP9[,3]=as.numeric(doc[,6])
   TP9[,4]=as.numeric(doc[,10])
   TP9[,5]=as.numeric(doc[,14])
   TP9[,6]=as.numeric(doc[,18])
-  
+
   idxRes=k*7
   for (t in 1:5){
     Results[1+idxRes,t]=min(TP9[,t+1])
@@ -64,7 +64,7 @@ for (j in 1:songnum){
     Results[7+idxRes,t]=sd(TP9[,t+1])
   }
   k=k+1
-  
+
   cat(paste("Left Ear_", annotname,"_",songname[j],"\n", sep=""))
   cat("min,")
   cat(paste(as.character(Results[1+idxRes,]), collapse=","))
@@ -87,7 +87,7 @@ for (j in 1:songnum){
   cat("Std Dev,")
   cat(paste(as.character(Results[7+idxRes,]), collapse=","))
   cat("\n\n")
-  
+
   minval= min(TP9[,2:6])
   maxval= max(TP9[,2:6])
   # Give the chart file a name.
@@ -103,22 +103,22 @@ for (j in 1:songnum){
   legend('topright',horiz=TRUE, signal, lty=1, col=c('red', 'blue', 'green','orange','purple'), bty='n', cex=.75)
   # Save the file.
   dev.off()
-  
+
   ##=============================================##
   AF7=matrix(NA,nrow = linenumber, ncol = 6)
   AF7[1,1] <- as.POSIXct(doc[1,1], format="%Y-%m-%d  %H:%M:%S")
   firstnum = as.numeric(AF7[1,1])
-  
+
   AF7[1,1] = 0
   AF7[2:linenumber,1] <- as.POSIXct(doc[2:linenumber,1], format="%Y-%m-%d  %H:%M:%S")
   AF7[2:linenumber,1] = as.numeric(AF7[2:linenumber,1]) - firstnum
-  
+
   AF7[,2]=as.numeric(doc[,3])
   AF7[,3]=as.numeric(doc[,7])
   AF7[,4]=as.numeric(doc[,11])
   AF7[,5]=as.numeric(doc[,15])
   AF7[,6]=as.numeric(doc[,19])
-  
+
   idxRes=k*7
   for (t in 1:5){
     Results[1+idxRes,t]=min(AF7[,t+1])
@@ -152,7 +152,7 @@ for (j in 1:songnum){
   cat("Std Dev,")
   cat(paste(as.character(Results[7+idxRes,]), collapse=","))
   cat("\n\n")
-  
+
   minval= min(AF7[,2:6])
   maxval= max(AF7[,2:6])
   # Give the chart file a name.
@@ -168,7 +168,7 @@ for (j in 1:songnum){
   legend('topright',horiz=TRUE, signal, lty=1, col=c('red', 'blue', 'green','orange','purple'), bty='n', cex=.75)
   # Save the file.
   dev.off()
-  
+
   ##=============================================##
   AF8=matrix(NA,nrow = linenumber, ncol = 6)
   AF8[1,1] <- as.POSIXct(doc[1,1], format="%Y-%m-%d  %H:%M:%S")
@@ -176,13 +176,13 @@ for (j in 1:songnum){
   AF8[1,1] = 0
   AF8[2:linenumber,1] <- as.POSIXct(doc[2:linenumber,1], format="%Y-%m-%d  %H:%M:%S")
   AF8[2:linenumber,1] = as.numeric(AF8[2:linenumber,1]) - firstnum
-  
+
   AF8[,2]=as.numeric(doc[,4])
   AF8[,3]=as.numeric(doc[,8])
   AF8[,4]=as.numeric(doc[,12])
   AF8[,5]=as.numeric(doc[,16])
   AF8[,6]=as.numeric(doc[,20])
-  
+
   idxRes=k*7
   for (t in 1:5){
     Results[1+idxRes,t]=min(AF8[,t+1])
@@ -216,7 +216,7 @@ for (j in 1:songnum){
   cat("Std Dev,")
   cat(paste(as.character(Results[7+idxRes,]), collapse=","))
   cat("\n\n")
-  
+
   minval= min(AF8[,2:6])
   maxval= max(AF8[,2:6])
   # Give the chart file a name.
@@ -232,7 +232,7 @@ for (j in 1:songnum){
   legend('topright',horiz=TRUE, signal, lty=1, col=c('red', 'blue', 'green','orange','purple'), bty='n', cex=.75)
   # Save the file.
   dev.off()
-  
+
   ##=====================================#
   TP10=matrix(NA,nrow = linenumber, ncol = 6)
   TP10[1,1] <- as.POSIXct(doc[1,1], format="%Y-%m-%d  %H:%M:%S")
@@ -240,13 +240,13 @@ for (j in 1:songnum){
   TP10[1,1] = 0
   TP10[2:linenumber,1] <- as.POSIXct(doc[2:linenumber,1], format="%Y-%m-%d  %H:%M:%S")
   TP10[2:linenumber,1] = as.numeric(TP10[2:linenumber,1]) - firstnum
-  
+
   TP10[,2]=as.numeric(doc[,5])
   TP10[,3]=as.numeric(doc[,9])
   TP10[,4]=as.numeric(doc[,13])
   TP10[,5]=as.numeric(doc[,17])
   TP10[,6]=as.numeric(doc[,21])
-  
+
   idxRes=k*7
   for (t in 1:5){
     Results[1+idxRes,t]=min(TP10[,t+1])
@@ -280,7 +280,7 @@ for (j in 1:songnum){
   cat("Std Dev,")
   cat(paste(as.character(Results[7+idxRes,]), collapse=","))
   cat("\n\n")
-  
+
   minval= min(TP10[,2:6])
   maxval= max(TP10[,2:6])
   # Give the chart file a name.
@@ -296,23 +296,23 @@ for (j in 1:songnum){
   legend('topright',horiz=TRUE, signal, lty=1, col=c('red', 'blue', 'green','orange','purple'), bty='n', cex=.75)
   # Save the file.
   dev.off()
-  
+
   for(z in 1:5){
     if(min(TP9[,z+1]) < minimaxi[1,z] & min(TP9[,z+1])!="-Inf"  & min(TP9[,z+1])> -10 )
         minimaxi[1,z]=min(TP9[,z+1])
     if(max(TP9[,z+1]) > minimaxi[2,z])
       minimaxi[2,z]=max(TP9[,z+1])
-    
+
     if(min(TP10[,z+1]) < minimaxi[1,z] & min(TP10[,z+1])!="-Inf"  & min(TP10[,z+1])> -10 )
       minimaxi[1,z]=min(TP10[,z+1])
     if(max(TP10[,z+1]) > minimaxi[2,z])
       minimaxi[2,z]=max(TP10[,z+1])
-    
+
     if(min(AF7[,z+1]) < minimaxi[1,z] & min(AF7[,z+1])!="-Inf"  & min(AF7[,z+1])> -10 )
       minimaxi[1,z]=min(AF7[,z+1])
     if(max(AF7[,z+1]) > minimaxi[2,z])
       minimaxi[2,z]=max(AF7[,z+1])
-    
+
     if(min(AF8[,z+1]) < minimaxi[1,z] & min(AF8[,z+1])!="-Inf"  & min(AF8[,z+1])> -10 )
       minimaxi[1,z]=min(AF8[,z+1])
     if(max(AF8[,z+1]) > minimaxi[2,z])
@@ -789,7 +789,7 @@ k=0
       B = Info[line,(8*(lop-1)+1):(8*(lop-1)+8)]
       B2 = c(B2, B)
       signallop= signallop +1
- #   }
+ #}
     names(B2) <- c(' ','d','e','l','t','a',' ',' ',' ','t','h','e','t','a',' ',' ',' ','a','l','p','h','a',' ',' ',' ',' ','b','e','t','a',' ',' ',' ','g','a','m','m','a',' ',' ');
     mp <- barplot(B2,main="Right Ear Signal", xlab="interval", ylab="the number of signal",
                   border="red", density=c(10, 20, 30, 40, 50, 60, 70, 80,10, 20, 30, 40, 50, 60, 70, 80,10, 20, 30, 40, 50, 60, 70, 80,10, 20, 30, 40, 50, 60, 70, 80,10, 20, 30, 40, 50, 60, 70, 80), ylim = c(0,(linenumber+5)))
@@ -810,7 +810,6 @@ k=0
  write.table(Info,paste(chemin,annotfolder,"/histinfo.txt", sep=""),sep=",",row.names=FALSE,col.names=FALSE)
  Infoname= cbind(Info,annotname)
  write.table(Infoname,paste(chemin,annotfolder,"/histoinfo.name.txt", sep=""),sep=",",row.names=FALSE,col.names=FALSE)
- 
+
  sink()
- 
- 
+

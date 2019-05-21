@@ -1,13 +1,13 @@
 rm(list=ls(all=TRUE))
 chemin = "C:/Users/thomas/Documents/GitHub/Project_Muse/Projet-Muse-master/Data/"
-annotname ="Chaikou"
-pays="_France"
+annotname ="Geoffrey"
+pays="_Chine"
 annotfolder = annotname
 
 position = c("TP9","TP10", "AF7", "AF8")
 signal = c("delta","theta", "alpha", "beta","gamma")
 songname = c(paste(annotname,pays,"1",sep=""), paste(annotname,pays,"2",sep=""),
-             paste(annotname,pays,"3",sep=""),paste(annotname,pays,"4",sep=""))
+             paste(annotname,pays,"3",sep=""),paste(annotname,pays,"4",sep=""),"null")
 
 songnum= length(songname)
 
@@ -789,7 +789,7 @@ k=0
       B = Info[line,(8*(lop-1)+1):(8*(lop-1)+8)]
       B2 = c(B2, B)
       signallop= signallop +1
- #}
+}
     names(B2) <- c(' ','d','e','l','t','a',' ',' ',' ','t','h','e','t','a',' ',' ',' ','a','l','p','h','a',' ',' ',' ',' ','b','e','t','a',' ',' ',' ','g','a','m','m','a',' ',' ');
     mp <- barplot(B2,main="Right Ear Signal", xlab="interval", ylab="the number of signal",
                   border="red", density=c(10, 20, 30, 40, 50, 60, 70, 80,10, 20, 30, 40, 50, 60, 70, 80,10, 20, 30, 40, 50, 60, 70, 80,10, 20, 30, 40, 50, 60, 70, 80,10, 20, 30, 40, 50, 60, 70, 80), ylim = c(0,(linenumber+5)))
@@ -807,9 +807,9 @@ k=0
 
 }
 
- write.table(Info,paste(chemin,annotfolder,"/histinfo.txt", sep=""),sep=",",row.names=FALSE,col.names=FALSE)
+ write.table(Info,paste(chemin,annotfolder,paste("/histinfo",annotname,pays,".txt",sep=""), sep=""),sep=",",row.names=FALSE,col.names=FALSE)
  Infoname= cbind(Info,annotname)
- write.table(Infoname,paste(chemin,annotfolder,"/histoinfo.name.txt", sep=""),sep=",",row.names=FALSE,col.names=FALSE)
+ write.table(Infoname,paste(chemin,annotfolder,paste("/histinfo",annotname,pays,".name.txt",sep=""), sep=""),sep=",",row.names=FALSE,col.names=FALSE)
 
  sink()
 

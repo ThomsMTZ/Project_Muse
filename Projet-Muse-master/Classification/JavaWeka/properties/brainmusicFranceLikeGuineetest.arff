@@ -1,0 +1,256 @@
+% 1. Title: Pima Indians Diabetes Database
+% 
+% 2. Sources:
+%    (a) Original owners: National Institute of Diabetes and Digestive and
+%                         Kidney Diseases
+%    (b) Donor of database: Vincent Sigillito (vgs@aplcen.apl.jhu.edu)
+%                           Research Center, RMI Group Leader
+%                           Applied Physics Laboratory
+%                           The Johns Hopkins University
+%                           Johns Hopkins Road
+%                           Laurel, MD 20707
+%                           (301) 953-6231
+%    (c) Date received: 9 May 1990
+% 
+% 3. Past Usage:
+%     1. Smith,~J.~W., Everhart,~J.~E., Dickson,~W.~C., Knowler,~W.~C., \&
+%        Johannes,~R.~S. (1988). Using the ADAP learning algorithm to forecast
+%        the onset of diabetes mellitus.  In {\it Proceedings of the Symposium
+%        on Computer Applications and Medical Care} (pp. 261--265).  IEEE
+%        Computer Society Press.
+% 
+%        The diagnostic, binary-valued variable investigated is whether the
+%        patient shows signs of diabetes according to World Health Organization
+%        criteria (i.e., if the 2 hour post-load plasma glucose was at least 
+%        200 mg/dl at any survey  examination or if found during routine medical
+%        care).   The population lives near Phoenix, Arizona, USA.
+% 
+%        Results: Their ADAP algorithm makes a real-valued prediction between
+%        0 and 1.  This was transformed into a binary decision using a cutoff of 
+%        0.448.  Using 576 training instances, the sensitivity and specificity
+%        of their algorithm was 76% on the remaining 192 instances.
+% 
+% 4. Relevant Information:
+%       Several constraints were placed on the selection of these instances from
+%       a larger database.  In particular, all patients here are females at
+%       least 21 years old of Pima Indian heritage.  ADAP is an adaptive learning
+%       routine that generates and executes digital analogs of perceptron-like
+%       devices.  It is a unique algorithm; see the paper for details.
+% 
+% 5. Number of Instances: 768
+% 
+% 6. Number of Attributes: 8 plus class 
+% 
+% 7. For Each Attribute: (all numeric-valued)
+%    1. Number of times pregnant
+%    2. Plasma glucose concentration a 2 hours in an oral glucose tolerance test
+%    3. Diastolic blood pressure (mm Hg)
+%    4. Triceps skin fold thickness (mm)
+%    5. 2-Hour serum insulin (mu U/ml)
+%    6. Body mass index (weight in kg/(height in m)^2)
+%    7. Diabetes pedigree function
+%    8. Age (years)
+%    9. Class variable (0 or 1)
+% 
+% 8. Missing Attribute Values: None
+% 
+% 9. Class Distribution: (class value 1 is interpreted as tested positive for
+%    diabetes)
+% 
+%    Class Value  Number of instances
+%    0            500
+%    1            268
+% 
+% 10. Brief statistical analysis:
+% 
+%     Attribute number:    Mean:   Standard Deviation:
+%     1.                     3.8     3.4
+%     2.                   120.9    32.0
+%     3.                    69.1    19.4
+%     4.                    20.5    16.0
+%     5.                    79.8   115.2
+%     6.                    32.0     7.9
+%     7.                     0.5     0.3
+%     8.                    33.2    11.8
+% 
+% 
+%
+%
+%
+%
+% Relabeled values in attribute 'class'
+%    From: 0                       To: 0     
+%    From: 1                       To: 1     
+%
+@relation brainmusic
+
+@attribute att1 numeric
+@attribute att2 numeric
+@attribute att3 numeric
+@attribute att4 numeric
+@attribute att5 numeric
+@attribute att6 numeric
+@attribute att7 numeric
+@attribute att8 numeric
+@attribute att9 numeric
+@attribute att10 numeric
+@attribute att11 numeric
+@attribute att12 numeric
+@attribute att13 numeric
+@attribute att14 numeric
+@attribute att15 numeric
+@attribute att16 numeric
+@attribute att17 numeric
+@attribute att18 numeric
+@attribute att19 numeric
+@attribute att20 numeric
+@attribute att21 numeric
+@attribute att22 numeric
+@attribute att23 numeric
+@attribute att24 numeric
+@attribute att25 numeric
+@attribute att26 numeric
+@attribute att27 numeric
+@attribute att28 numeric
+@attribute att29 numeric
+@attribute att30 numeric
+@attribute att31 numeric
+@attribute att32 numeric
+@attribute att33 numeric
+@attribute att34 numeric
+@attribute att35 numeric
+@attribute att36 numeric
+@attribute att37 numeric
+@attribute att38 numeric
+@attribute att39 numeric
+@attribute att40 numeric
+@attribute att41 numeric
+@attribute att42 numeric
+@attribute att43 numeric
+@attribute att44 numeric
+@attribute att45 numeric
+@attribute att46 numeric
+@attribute att47 numeric
+@attribute att48 numeric
+@attribute att49 numeric
+@attribute att50 numeric
+@attribute att51 numeric
+@attribute att52 numeric
+@attribute att53 numeric
+@attribute att54 numeric
+@attribute att55 numeric
+@attribute att56 numeric
+@attribute att57 numeric
+@attribute att58 numeric
+@attribute att59 numeric
+@attribute att60 numeric
+@attribute att61 numeric
+@attribute att62 numeric
+@attribute att63 numeric
+@attribute att64 numeric
+@attribute att65 numeric
+@attribute att66 numeric
+@attribute att67 numeric
+@attribute att68 numeric
+@attribute att69 numeric
+@attribute att70 numeric
+@attribute att71 numeric
+@attribute att72 numeric
+@attribute att73 numeric
+@attribute att74 numeric
+@attribute att75 numeric
+@attribute att76 numeric
+@attribute att77 numeric
+@attribute att78 numeric
+@attribute att79 numeric
+@attribute att80 numeric
+@attribute att81 numeric
+@attribute att82 numeric
+@attribute att83 numeric
+@attribute att84 numeric
+@attribute att85 numeric
+@attribute att86 numeric
+@attribute att87 numeric
+@attribute att88 numeric
+@attribute att89 numeric
+@attribute att90 numeric
+@attribute att91 numeric
+@attribute att92 numeric
+@attribute att93 numeric
+@attribute att94 numeric
+@attribute att95 numeric
+@attribute att96 numeric
+@attribute att97 numeric
+@attribute att98 numeric
+@attribute att99 numeric
+@attribute att100 numeric
+@attribute att101 numeric
+@attribute att102 numeric
+@attribute att103 numeric
+@attribute att104 numeric
+@attribute att105 numeric
+@attribute att106 numeric
+@attribute att107 numeric
+@attribute att108 numeric
+@attribute att109 numeric
+@attribute att110 numeric
+@attribute att111 numeric
+@attribute att112 numeric
+@attribute att113 numeric
+@attribute att114 numeric
+@attribute att115 numeric
+@attribute att116 numeric
+@attribute att117 numeric
+@attribute att118 numeric
+@attribute att119 numeric
+@attribute att120 numeric
+@attribute att121 numeric
+@attribute att122 numeric
+@attribute att123 numeric
+@attribute att124 numeric
+@attribute att125 numeric
+@attribute att126 numeric
+@attribute att127 numeric
+@attribute att128 numeric
+@attribute att129 numeric
+@attribute att130 numeric
+@attribute att131 numeric
+@attribute att132 numeric
+@attribute att133 numeric
+@attribute att134 numeric
+@attribute att135 numeric
+@attribute att136 numeric
+@attribute att137 numeric
+@attribute att138 numeric
+@attribute att139 numeric
+@attribute att140 numeric
+@attribute att141 numeric
+@attribute att142 numeric
+@attribute att143 numeric
+@attribute att144 numeric
+@attribute att145 numeric
+@attribute att146 numeric
+@attribute att147 numeric
+@attribute att148 numeric
+@attribute att149 numeric
+@attribute att150 numeric
+@attribute att151 numeric
+@attribute att152 numeric
+@attribute att153 numeric
+@attribute att154 numeric
+@attribute att155 numeric
+@attribute att156 numeric
+@attribute att157 numeric
+@attribute att158 numeric
+@attribute att159 numeric
+@attribute att160 numeric
+@attribute class {0,1}
+@data
+
+
+0,0,6,13,19,18,2,1,0,0,0,7,30,15,6,1,0,0,0,0,19,29,11,0,0,0,0,12,31,14,2,0,0,0,3,22,24,8,1,1,0,11,12,14,9,6,3,4,0,8,24,10,10,5,2,0,6,32,15,6,0,0,0,0,0,0,10,44,5,0,0,0,0,0,0,18,39,2,0,0,8,26,12,11,2,0,0,0,5,26,23,5,0,0,0,0,14,35,9,1,0,0,0,0,12,36,9,0,1,1,0,0,7,27,21,3,1,0,0,0,0,1,10,13,19,13,2,1,0,0,3,12,24,15,4,1,0,0,0,0,10,31,15,3,0,0,0,13,33,7,5,1,0,0,0,23,26,2,2,6,0
+0,0,1,6,11,27,14,2,0,0,0,2,7,29,20,3,0,0,0,1,6,27,25,2,0,0,0,12,30,14,5,0,0,1,16,20,13,9,2,0,0,0,1,1,38,9,10,2,0,0,12,16,22,8,3,0,2,13,30,16,0,0,0,0,0,0,0,15,42,4,0,0,0,0,0,0,29,31,1,0,5,28,18,3,6,1,0,0,4,14,34,8,1,0,0,0,4,26,25,4,2,0,0,0,9,39,12,0,1,0,0,0,3,31,18,8,1,0,0,0,0,0,0,3,9,32,16,1,0,0,0,0,4,28,25,4,0,0,0,0,4,25,24,8,0,0,1,10,23,21,6,0,0,1,19,11,11,12,7,0,1
+0,2,5,23,16,7,6,1,0,0,1,19,29,8,3,0,0,0,0,6,19,34,1,0,0,0,0,24,34,2,0,0,0,3,40,15,1,1,0,0,5,18,14,16,6,0,1,0,1,21,29,8,1,0,0,0,9,41,10,0,0,0,0,0,0,1,38,19,2,0,0,0,0,0,8,39,12,1,0,0,20,29,4,3,3,1,0,0,11,29,15,4,1,0,0,0,18,28,12,2,0,0,0,0,20,37,2,1,0,0,0,0,18,37,5,0,0,0,0,0,0,2,12,22,15,5,4,0,0,1,2,18,28,7,2,2,0,0,0,1,14,27,14,4,0,0,2,18,34,6,0,0,0,1,19,32,6,1,0,1,0
+0,2,4,6,21,16,10,1,0,0,1,5,18,15,14,7,0,0,0,0,8,37,13,2,0,0,0,14,35,9,2,0,0,0,18,31,4,5,2,0,1,14,9,7,8,11,8,2,0,11,15,11,16,3,2,2,3,25,19,10,1,0,2,0,0,4,38,15,2,1,0,0,0,0,18,40,2,0,0,0,13,25,17,5,0,0,0,0,7,33,18,2,0,0,0,0,15,34,10,1,0,0,0,0,13,37,10,0,0,0,0,0,10,34,11,5,0,0,0,0,0,0,7,7,8,19,16,3,0,0,0,6,16,10,18,10,0,0,0,1,6,34,17,2,0,0,0,11,35,10,4,0,0,0,16,11,13,14,3,3,0
+
+

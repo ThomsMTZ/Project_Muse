@@ -1,0 +1,183 @@
+@relation brainmusic
+
+@attribute att1 numeric
+@attribute att2 numeric
+@attribute att3 numeric
+@attribute att4 numeric
+@attribute att5 numeric
+@attribute att6 numeric
+@attribute att7 numeric
+@attribute att8 numeric
+@attribute att9 numeric
+@attribute att10 numeric
+@attribute att11 numeric
+@attribute att12 numeric
+@attribute att13 numeric
+@attribute att14 numeric
+@attribute att15 numeric
+@attribute att16 numeric
+@attribute att17 numeric
+@attribute att18 numeric
+@attribute att19 numeric
+@attribute att20 numeric
+@attribute att21 numeric
+@attribute att22 numeric
+@attribute att23 numeric
+@attribute att24 numeric
+@attribute att25 numeric
+@attribute att26 numeric
+@attribute att27 numeric
+@attribute att28 numeric
+@attribute att29 numeric
+@attribute att30 numeric
+@attribute att31 numeric
+@attribute att32 numeric
+@attribute att33 numeric
+@attribute att34 numeric
+@attribute att35 numeric
+@attribute att36 numeric
+@attribute att37 numeric
+@attribute att38 numeric
+@attribute att39 numeric
+@attribute att40 numeric
+@attribute att41 numeric
+@attribute att42 numeric
+@attribute att43 numeric
+@attribute att44 numeric
+@attribute att45 numeric
+@attribute att46 numeric
+@attribute att47 numeric
+@attribute att48 numeric
+@attribute att49 numeric
+@attribute att50 numeric
+@attribute att51 numeric
+@attribute att52 numeric
+@attribute att53 numeric
+@attribute att54 numeric
+@attribute att55 numeric
+@attribute att56 numeric
+@attribute att57 numeric
+@attribute att58 numeric
+@attribute att59 numeric
+@attribute att60 numeric
+@attribute att61 numeric
+@attribute att62 numeric
+@attribute att63 numeric
+@attribute att64 numeric
+@attribute att65 numeric
+@attribute att66 numeric
+@attribute att67 numeric
+@attribute att68 numeric
+@attribute att69 numeric
+@attribute att70 numeric
+@attribute att71 numeric
+@attribute att72 numeric
+@attribute att73 numeric
+@attribute att74 numeric
+@attribute att75 numeric
+@attribute att76 numeric
+@attribute att77 numeric
+@attribute att78 numeric
+@attribute att79 numeric
+@attribute att80 numeric
+@attribute att81 numeric
+@attribute att82 numeric
+@attribute att83 numeric
+@attribute att84 numeric
+@attribute att85 numeric
+@attribute att86 numeric
+@attribute att87 numeric
+@attribute att88 numeric
+@attribute att89 numeric
+@attribute att90 numeric
+@attribute att91 numeric
+@attribute att92 numeric
+@attribute att93 numeric
+@attribute att94 numeric
+@attribute att95 numeric
+@attribute att96 numeric
+@attribute att97 numeric
+@attribute att98 numeric
+@attribute att99 numeric
+@attribute att100 numeric
+@attribute att101 numeric
+@attribute att102 numeric
+@attribute att103 numeric
+@attribute att104 numeric
+@attribute att105 numeric
+@attribute att106 numeric
+@attribute att107 numeric
+@attribute att108 numeric
+@attribute att109 numeric
+@attribute att110 numeric
+@attribute att111 numeric
+@attribute att112 numeric
+@attribute att113 numeric
+@attribute att114 numeric
+@attribute att115 numeric
+@attribute att116 numeric
+@attribute att117 numeric
+@attribute att118 numeric
+@attribute att119 numeric
+@attribute att120 numeric
+@attribute att121 numeric
+@attribute att122 numeric
+@attribute att123 numeric
+@attribute att124 numeric
+@attribute att125 numeric
+@attribute att126 numeric
+@attribute att127 numeric
+@attribute att128 numeric
+@attribute att129 numeric
+@attribute att130 numeric
+@attribute att131 numeric
+@attribute att132 numeric
+@attribute att133 numeric
+@attribute att134 numeric
+@attribute att135 numeric
+@attribute att136 numeric
+@attribute att137 numeric
+@attribute att138 numeric
+@attribute att139 numeric
+@attribute att140 numeric
+@attribute att141 numeric
+@attribute att142 numeric
+@attribute att143 numeric
+@attribute att144 numeric
+@attribute att145 numeric
+@attribute att146 numeric
+@attribute att147 numeric
+@attribute att148 numeric
+@attribute att149 numeric
+@attribute att150 numeric
+@attribute att151 numeric
+@attribute att152 numeric
+@attribute att153 numeric
+@attribute att154 numeric
+@attribute att155 numeric
+@attribute att156 numeric
+@attribute att157 numeric
+@attribute att158 numeric
+@attribute att159 numeric
+@attribute att160 numeric
+@attribute class {0,1}
+
+@data
+
+0,0,10,36,15,1,2,3,0,0,2,17,31,11,5,1,0,0,0,4,16,28,18,1,0,0,6,56,4,1,0,0,0,0,1,48,17,1,0,0,2,20,23,7,6,4,5,0,3,26,23,7,3,3,2,0,7,30,20,7,3,0,0,0,8,54,5,0,0,0,0,0,0,49,18,0,0,0,0,0,1,25,18,6,3,11,3,0,11,22,17,7,5,5,0,0,8,31,23,4,1,0,0,0,30,34,3,0,0,0,0,0,17,43,6,1,0,0,0,0,0,1,12,32,17,3,1,1,0,0,3,7,41,13,2,1,0,0,0,4,11,41,9,2,0,0,8,47,11,1,0,0,0,0,1,35,29,2,0,0,1
+0,0,10,25,7,3,0,0,0,0,1,15,23,5,1,0,0,0,0,2,6,29,7,1,0,0,7,37,1,0,0,0,0,0,0,32,13,0,0,0,0,18,19,6,1,1,0,0,9,16,13,6,1,0,0,0,5,24,13,3,0,0,0,0,5,37,3,0,0,0,0,0,0,42,3,0,0,0,0,0,6,17,15,5,2,0,0,0,6,24,10,5,0,0,0,0,10,23,10,2,0,0,0,0,14,31,0,0,0,0,0,0,11,34,0,0,0,0,0,0,0,0,14,19,9,3,0,0,0,0,0,12,27,3,3,0,0,0,0,0,6,30,9,0,0,0,8,33,4,0,0,0,0,0,2,38,5,0,0,0,1
+0,0,3,30,18,10,3,0,0,0,3,21,19,16,3,2,0,0,0,2,14,31,15,2,0,0,6,54,4,0,0,0,0,0,2,46,16,0,0,0,1,15,24,20,3,0,1,0,8,17,29,8,1,1,0,0,10,23,26,5,0,0,0,0,8,52,4,0,0,0,0,0,2,59,3,0,0,0,0,0,1,20,25,12,4,2,0,0,9,22,19,11,3,0,0,0,11,24,24,5,0,0,0,0,22,42,0,0,0,0,0,0,16,48,0,0,0,0,0,0,0,0,4,30,15,13,2,0,0,0,1,23,23,9,6,2,0,0,0,3,13,26,17,5,0,0,15,48,1,0,0,0,0,0,0,57,7,0,0,0,1
+0,0,4,28,19,10,0,2,0,0,0,19,26,13,4,1,0,0,0,1,14,38,8,2,0,0,11,39,8,2,2,1,0,0,2,43,10,4,2,2,2,18,21,10,4,6,2,0,6,21,15,12,7,2,0,0,6,31,20,6,0,0,0,0,9,45,6,2,1,0,0,0,2,45,13,0,2,1,0,0,1,17,20,12,10,3,0,0,7,19,21,13,3,0,0,0,8,31,17,7,0,0,0,0,25,38,0,0,0,0,0,0,15,39,8,1,0,0,0,0,0,0,6,24,25,3,3,2,0,0,3,10,29,15,6,0,0,0,0,1,11,38,9,4,0,0,3,46,10,4,0,0,0,0,2,42,12,4,2,1,1
+
+0,7,16,11,12,6,8,1,0,4,16,26,10,3,2,0,0,1,7,23,20,8,2,0,0,2,27,30,2,0,0,0,0,36,25,0,0,0,0,0,14,32,10,3,2,0,0,0,5,24,32,0,0,0,0,0,13,35,11,2,0,0,0,0,8,37,16,0,0,0,0,0,40,21,0,0,0,0,0,0,0,3,22,21,9,3,3,0,0,3,30,20,3,3,2,0,1,19,32,5,2,2,0,0,0,6,32,20,3,0,0,0,0,34,27,0,0,0,0,0,2,9,17,15,8,7,3,0,0,1,20,34,4,0,2,0,0,2,12,18,18,8,1,2,0,0,38,22,1,0,0,0,1,37,23,0,0,0,0,0,1
+0,4,13,6,9,5,7,5,0,5,8,15,15,2,3,1,0,0,2,16,18,8,3,2,0,0,11,28,5,4,1,0,1,25,18,1,4,0,0,0,3,10,21,13,2,0,0,0,2,12,21,13,1,0,0,0,3,20,15,9,2,0,0,0,2,22,20,4,1,0,0,0,22,22,5,0,0,0,0,0,0,0,0,1,3,18,21,6,0,0,0,3,5,10,28,3,0,0,2,4,10,15,9,9,0,0,2,11,15,6,12,3,0,3,42,2,2,0,0,0,0,3,11,11,8,11,1,4,0,1,12,18,11,3,4,0,0,0,8,13,12,9,4,3,0,1,15,25,5,2,1,0,1,27,16,2,3,0,0,0,0
+0,9,14,10,14,6,5,3,0,3,15,18,24,1,0,0,0,1,7,22,13,14,4,0,0,0,10,38,6,3,2,2,0,7,48,2,0,0,3,1,5,34,8,8,1,1,2,2,1,22,28,4,5,1,0,0,12,29,14,6,0,0,0,0,13,34,8,4,2,0,0,0,45,11,4,1,0,0,0,0,0,0,12,14,10,18,4,3,0,3,15,8,16,10,7,2,3,10,17,8,5,7,9,2,1,7,21,12,8,3,5,4,0,25,29,6,0,1,0,0,0,10,7,12,13,11,8,0,0,0,13,29,13,5,1,0,0,0,6,24,15,11,3,2,0,0,18,34,3,4,2,0,0,39,17,2,2,1,0,0,0
+0,10,15,12,16,6,0,0,0,1,21,27,10,0,0,0,0,3,6,23,17,8,2,0,0,0,8,38,13,0,0,0,0,17,36,6,0,0,0,0,12,28,14,4,1,0,0,0,0,19,32,7,1,0,0,0,15,19,19,5,1,0,0,0,5,45,9,0,0,0,0,0,53,6,0,0,0,0,0,0,0,2,11,25,10,4,6,1,0,2,15,18,13,5,1,5,0,9,27,11,4,3,3,2,0,3,32,14,1,7,1,1,0,26,29,4,0,0,0,0,0,6,22,14,13,4,0,0,0,3,19,29,7,1,0,0,0,3,9,19,15,11,1,1,0,2,26,30,1,0,0,0,0,45,14,0,0,0,0,0,1
+
+0,0,11,22,8,5,12,0,0,0,2,23,14,15,4,0,0,0,2,12,19,21,4,0,0,0,0,3,25,28,2,0,0,0,0,3,25,30,0,0,0,2,17,17,11,6,3,2,0,11,15,11,7,8,4,2,2,18,11,14,6,4,1,2,2,1,14,33,8,0,0,0,1,5,29,18,5,0,0,0,10,11,6,10,13,7,1,0,7,15,4,5,10,12,5,0,4,14,13,11,8,6,2,0,1,1,7,24,23,2,0,0,0,1,16,31,6,4,0,0,1,4,28,14,1,8,2,0,0,0,12,26,11,3,6,0,0,0,0,16,20,16,4,2,0,0,1,21,24,8,3,1,0,0,2,26,22,6,2,0,1
+0,0,2,13,17,6,3,0,0,0,1,12,15,12,1,0,0,0,2,8,19,9,2,1,0,0,0,11,24,6,0,0,0,0,0,13,26,2,0,0,0,0,0,0,6,16,16,3,0,0,2,9,11,9,6,4,0,5,11,8,8,1,4,4,0,3,6,22,10,0,0,0,3,8,8,14,8,0,0,0,5,8,4,5,7,8,4,0,3,9,4,3,6,6,9,1,1,10,7,4,7,4,8,0,0,0,11,14,16,0,0,0,0,5,10,22,3,1,0,0,0,1,12,12,5,7,4,0,0,0,8,11,8,6,8,0,0,0,2,8,9,13,7,2,0,0,1,14,22,3,1,0,0,1,11,19,10,0,0,0,1
+0,3,15,16,12,6,6,1,0,0,3,26,16,5,9,0,0,1,4,15,17,9,7,6,0,0,0,2,25,23,4,5,0,0,0,2,39,16,0,2,0,0,5,21,15,13,4,1,1,7,12,9,10,14,6,0,0,13,10,8,12,10,6,0,1,0,0,24,34,0,0,0,1,3,12,20,13,10,0,0,8,14,11,8,5,8,4,1,4,14,14,5,7,8,6,1,7,13,9,12,10,3,3,2,1,5,9,21,21,2,0,0,4,4,11,20,16,4,0,0,1,9,17,19,7,6,0,0,0,0,10,31,10,7,1,0,0,0,4,17,21,14,3,0,0,0,2,21,27,5,4,0,0,0,1,15,34,8,1,0,0
+0,4,15,23,7,9,2,0,0,1,5,30,10,5,9,0,0,0,0,18,20,8,3,11,0,0,0,2,24,27,7,0,0,0,0,3,17,28,12,0,0,0,0,4,20,28,8,0,0,0,6,20,16,8,7,3,0,11,9,17,8,8,5,2,0,3,1,9,14,19,14,0,3,2,4,3,10,18,12,8,4,25,8,5,6,6,6,0,4,16,15,7,6,4,7,1,4,14,11,8,10,7,4,2,1,3,2,6,18,27,3,0,5,1,4,1,13,28,8,0,2,3,24,17,9,3,2,0,0,0,9,15,21,12,3,0,0,0,2,11,21,12,8,6,0,0,0,3,28,26,3,0,0,0,1,7,22,28,2,0,0
+
+
+

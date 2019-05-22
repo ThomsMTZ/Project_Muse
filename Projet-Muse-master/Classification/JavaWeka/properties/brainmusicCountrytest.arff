@@ -1,0 +1,269 @@
+% 1. Title: Pima Indians Diabetes Database
+% 
+% 2. Sources:
+%    (a) Original owners: National Institute of Diabetes and Digestive and
+%                         Kidney Diseases
+%    (b) Donor of database: Vincent Sigillito (vgs@aplcen.apl.jhu.edu)
+%                           Research Center, RMI Group Leader
+%                           Applied Physics Laboratory
+%                           The Johns Hopkins University
+%                           Johns Hopkins Road
+%                           Laurel, MD 20707
+%                           (301) 953-6231
+%    (c) Date received: 9 May 1990
+% 
+% 3. Past Usage:
+%     1. Smith,~J.~W., Everhart,~J.~E., Dickson,~W.~C., Knowler,~W.~C., \&
+%        Johannes,~R.~S. (1988). Using the ADAP learning algorithm to forecast
+%        the onset of diabetes mellitus.  In {\it Proceedings of the Symposium
+%        on Computer Applications and Medical Care} (pp. 261--265).  IEEE
+%        Computer Society Press.
+% 
+%        The diagnostic, binary-valued variable investigated is whether the
+%        patient shows signs of diabetes according to World Health Organization
+%        criteria (i.e., if the 2 hour post-load plasma glucose was at least 
+%        200 mg/dl at any survey  examination or if found during routine medical
+%        care).   The population lives near Phoenix, Arizona, USA.
+% 
+%        Results: Their ADAP algorithm makes a real-valued prediction between
+%        0 and 1.  This was transformed into a binary decision using a cutoff of 
+%        0.448.  Using 576 training instances, the sensitivity and specificity
+%        of their algorithm was 76% on the remaining 192 instances.
+% 
+% 4. Relevant Information:
+%       Several constraints were placed on the selection of these instances from
+%       a larger database.  In particular, all patients here are females at
+%       least 21 years old of Pima Indian heritage.  ADAP is an adaptive learning
+%       routine that generates and executes digital analogs of perceptron-like
+%       devices.  It is a unique algorithm; see the paper for details.
+% 
+% 5. Number of Instances: 768
+% 
+% 6. Number of Attributes: 8 plus class 
+% 
+% 7. For Each Attribute: (all numeric-valued)
+%    1. Number of times pregnant
+%    2. Plasma glucose concentration a 2 hours in an oral glucose tolerance test
+%    3. Diastolic blood pressure (mm Hg)
+%    4. Triceps skin fold thickness (mm)
+%    5. 2-Hour serum insulin (mu U/ml)
+%    6. Body mass index (weight in kg/(height in m)^2)
+%    7. Diabetes pedigree function
+%    8. Age (years)
+%    9. Class variable (0 or 1)
+% 
+% 8. Missing Attribute Values: None
+% 
+% 9. Class Distribution: (class value 1 is interpreted as "tested positive for
+%    diabetes")
+% 
+%    Class Value  Number of instances
+%    0            500
+%    1            268
+% 
+% 10. Brief statistical analysis:
+% 
+%     Attribute number:    Mean:   Standard Deviation:
+%     1.                     3.8     3.4
+%     2.                   120.9    32.0
+%     3.                    69.1    19.4
+%     4.                    20.5    16.0
+%     5.                    79.8   115.2
+%     6.                    32.0     7.9
+%     7.                     0.5     0.3
+%     8.                    33.2    11.8
+% 
+% 
+%
+%
+%
+%
+% Relabeled values in attribute 'class'
+%    From: 0                       To: 0     
+%    From: 1                       To: 1     
+%
+@relation brainmusic
+
+@attribute att1 numeric
+@attribute att2 numeric
+@attribute att3 numeric
+@attribute att4 numeric
+@attribute att5 numeric
+@attribute att6 numeric
+@attribute att7 numeric
+@attribute att8 numeric
+@attribute att9 numeric
+@attribute att10 numeric
+@attribute att11 numeric
+@attribute att12 numeric
+@attribute att13 numeric
+@attribute att14 numeric
+@attribute att15 numeric
+@attribute att16 numeric
+@attribute att17 numeric
+@attribute att18 numeric
+@attribute att19 numeric
+@attribute att20 numeric
+@attribute att21 numeric
+@attribute att22 numeric
+@attribute att23 numeric
+@attribute att24 numeric
+@attribute att25 numeric
+@attribute att26 numeric
+@attribute att27 numeric
+@attribute att28 numeric
+@attribute att29 numeric
+@attribute att30 numeric
+@attribute att31 numeric
+@attribute att32 numeric
+@attribute att33 numeric
+@attribute att34 numeric
+@attribute att35 numeric
+@attribute att36 numeric
+@attribute att37 numeric
+@attribute att38 numeric
+@attribute att39 numeric
+@attribute att40 numeric
+@attribute att41 numeric
+@attribute att42 numeric
+@attribute att43 numeric
+@attribute att44 numeric
+@attribute att45 numeric
+@attribute att46 numeric
+@attribute att47 numeric
+@attribute att48 numeric
+@attribute att49 numeric
+@attribute att50 numeric
+@attribute att51 numeric
+@attribute att52 numeric
+@attribute att53 numeric
+@attribute att54 numeric
+@attribute att55 numeric
+@attribute att56 numeric
+@attribute att57 numeric
+@attribute att58 numeric
+@attribute att59 numeric
+@attribute att60 numeric
+@attribute att61 numeric
+@attribute att62 numeric
+@attribute att63 numeric
+@attribute att64 numeric
+@attribute att65 numeric
+@attribute att66 numeric
+@attribute att67 numeric
+@attribute att68 numeric
+@attribute att69 numeric
+@attribute att70 numeric
+@attribute att71 numeric
+@attribute att72 numeric
+@attribute att73 numeric
+@attribute att74 numeric
+@attribute att75 numeric
+@attribute att76 numeric
+@attribute att77 numeric
+@attribute att78 numeric
+@attribute att79 numeric
+@attribute att80 numeric
+@attribute att81 numeric
+@attribute att82 numeric
+@attribute att83 numeric
+@attribute att84 numeric
+@attribute att85 numeric
+@attribute att86 numeric
+@attribute att87 numeric
+@attribute att88 numeric
+@attribute att89 numeric
+@attribute att90 numeric
+@attribute att91 numeric
+@attribute att92 numeric
+@attribute att93 numeric
+@attribute att94 numeric
+@attribute att95 numeric
+@attribute att96 numeric
+@attribute att97 numeric
+@attribute att98 numeric
+@attribute att99 numeric
+@attribute att100 numeric
+@attribute att101 numeric
+@attribute att102 numeric
+@attribute att103 numeric
+@attribute att104 numeric
+@attribute att105 numeric
+@attribute att106 numeric
+@attribute att107 numeric
+@attribute att108 numeric
+@attribute att109 numeric
+@attribute att110 numeric
+@attribute att111 numeric
+@attribute att112 numeric
+@attribute att113 numeric
+@attribute att114 numeric
+@attribute att115 numeric
+@attribute att116 numeric
+@attribute att117 numeric
+@attribute att118 numeric
+@attribute att119 numeric
+@attribute att120 numeric
+@attribute att121 numeric
+@attribute att122 numeric
+@attribute att123 numeric
+@attribute att124 numeric
+@attribute att125 numeric
+@attribute att126 numeric
+@attribute att127 numeric
+@attribute att128 numeric
+@attribute att129 numeric
+@attribute att130 numeric
+@attribute att131 numeric
+@attribute att132 numeric
+@attribute att133 numeric
+@attribute att134 numeric
+@attribute att135 numeric
+@attribute att136 numeric
+@attribute att137 numeric
+@attribute att138 numeric
+@attribute att139 numeric
+@attribute att140 numeric
+@attribute att141 numeric
+@attribute att142 numeric
+@attribute att143 numeric
+@attribute att144 numeric
+@attribute att145 numeric
+@attribute att146 numeric
+@attribute att147 numeric
+@attribute att148 numeric
+@attribute att149 numeric
+@attribute att150 numeric
+@attribute att151 numeric
+@attribute att152 numeric
+@attribute att153 numeric
+@attribute att154 numeric
+@attribute att155 numeric
+@attribute att156 numeric
+@attribute att157 numeric
+@attribute att158 numeric
+@attribute att159 numeric
+@attribute att160 numeric
+@attribute class {Arabic, Chinese, Indonesian, Romanian, Francais, Guinee}
+@data
+0,1,38,62,11,1,0,1,0,0,0,5,53,50,5,1,0,0,0,0,0,21,81,12,0,0,0,0,23,90,1,0,0,0,0,37,68,9,0,0,3,47,52,7,1,2,1,1,0,0,23,80,6,2,3,0,0,0,0,65,42,2,4,1,0,0,0,49,60,4,1,0,0,0,2,62,45,5,0,0,0,0,0,0,0,0,114,0,0,0,0,0,0,114,0,0,0,0,0,0,0,114,0,0,0,0,0,0,0,0,114,0,0,0,0,0,0,0,0,114,0,2,49,55,6,1,1,0,0,0,0,1,45,64,4,0,0,0,0,0,2,7,92,13,0,0,0,0,21,92,1,0,0,0,0,21,70,23,0,0,Chinese
+0,0,0,2,11,38,61,1,0,0,0,0,0,20,82,11,0,0,0,0,0,11,90,12,0,0,0,0,0,91,22,0,0,0,0,0,14,99,0,0,0,0,11,77,20,5,0,0,0,0,0,4,84,25,0,0,0,0,0,19,94,0,0,0,0,0,0,104,9,0,0,0,0,0,35,78,0,0,0,0,0,0,0,32,65,15,1,0,0,0,0,0,41,71,1,0,0,0,0,0,75,38,0,0,0,0,0,1,112,0,0,0,0,0,0,53,60,0,0,0,0,0,0,1,12,44,55,1,0,0,0,0,0,23,78,12,0,0,0,0,0,16,87,10,0,0,0,0,0,110,3,0,0,0,0,0,68,45,0,0,Chinese
+0,0,1,18,44,42,29,5,0,0,0,0,31,52,49,7,0,0,0,1,17,47,60,14,0,0,0,0,0,98,41,0,0,0,0,0,50,89,0,0,0,0,0,0,0,139,0,0,0,0,0,0,0,0,139,0,0,0,0,0,0,139,0,0,0,0,0,0,0,0,0,139,0,0,0,0,0,0,0,139,0,0,11,60,48,18,1,1,0,0,6,39,74,18,2,0,0,0,35,79,25,0,0,0,0,0,0,23,116,0,0,0,0,0,6,128,5,0,0,0,0,0,8,19,42,44,26,0,0,0,0,0,37,53,42,7,0,0,0,0,11,86,40,2,0,0,0,0,0,45,84,10,0,0,0,0,0,106,24,9,Chinese
+0,3,36,67,5,6,1,0,0,0,5,48,52,7,4,2,0,0,0,9,56,41,12,0,0,0,0,45,72,1,0,0,0,0,0,60,58,0,0,0,1,83,32,2,0,0,0,0,2,52,59,5,0,0,0,0,5,77,30,6,0,0,0,0,46,70,2,0,0,0,0,0,16,95,7,0,0,0,0,0,3,63,49,3,0,0,0,0,2,37,76,3,0,0,0,0,3,53,60,2,0,0,0,0,41,75,2,0,0,0,0,0,29,80,9,0,0,0,0,0,0,2,70,35,4,6,1,0,0,0,7,61,40,7,3,0,0,0,0,4,35,52,23,4,0,0,0,82,36,0,0,0,0,0,13,90,14,1,0,0,Romanian
+0,0,5,41,40,25,6,1,0,0,8,47,52,8,1,2,0,0,1,41,65,10,0,1,0,0,0,18,71,23,6,0,0,0,1,50,48,16,3,0,3,49,56,9,1,0,0,0,5,54,56,3,0,0,0,0,7,84,27,0,0,0,0,0,6,75,37,0,0,0,0,0,0,58,58,2,0,0,0,0,0,8,42,54,12,2,0,0,3,19,67,24,4,1,0,0,1,40,67,7,3,0,0,0,0,28,76,14,0,0,0,0,1,18,77,22,0,0,0,0,0,0,14,40,40,19,5,0,0,0,8,65,39,3,2,1,0,0,2,38,63,12,2,1,0,0,1,53,48,14,2,0,0,0,13,60,38,5,2,0,Arabic
+0,2,12,69,45,0,0,0,0,0,0,2,36,70,19,1,0,0,0,6,13,63,46,0,0,0,15,110,3,0,0,0,0,13,108,6,1,0,0,0,4,43,76,5,0,0,0,0,0,11,80,36,1,0,0,0,7,93,28,0,0,0,0,0,60,68,0,0,0,0,0,0,22,103,3,0,0,0,0,0,0,18,60,50,0,0,0,0,0,8,50,62,7,1,0,0,3,77,46,2,0,0,0,0,7,113,8,0,0,0,0,0,0,53,74,1,0,0,0,0,0,0,28,61,39,0,0,0,0,0,0,5,30,64,28,1,0,0,0,11,15,75,27,0,0,0,13,106,9,0,0,0,0,1,78,46,3,0,0,0,Arabic
+0,2,33,72,1,0,0,0,0,0,73,35,0,0,0,0,0,0,41,67,0,0,0,0,0,1,103,4,0,0,0,0,0,0,81,27,0,0,0,0,11,80,17,0,0,0,0,0,31,71,5,1,0,0,0,0,45,56,5,2,0,0,0,0,94,14,0,0,0,0,0,0,36,69,3,0,0,0,0,0,3,69,35,1,0,0,0,0,18,84,4,2,0,0,0,0,39,63,4,2,0,0,0,0,60,47,1,0,0,0,0,0,29,75,2,2,0,0,0,0,0,2,36,57,13,0,0,0,0,1,65,42,0,0,0,0,0,0,54,54,0,0,0,0,0,14,94,0,0,0,0,0,0,30,66,12,0,0,0,0,Indonesian
+0,9,102,4,0,0,0,0,0,0,0,15,73,27,0,0,0,0,0,0,4,33,71,7,0,0,0,29,82,4,0,0,0,0,0,1,51,52,9,2,5,69,36,5,0,0,0,0,3,61,46,5,0,0,0,0,9,69,32,5,0,0,0,0,10,94,11,0,0,0,0,0,3,51,57,4,0,0,0,0,0,0,13,33,47,21,1,0,0,0,1,19,22,41,31,1,0,0,3,17,33,48,14,0,0,0,1,18,26,38,31,1,0,0,0,7,31,32,43,2,0,21,89,5,0,0,0,0,0,0,0,27,69,19,0,0,0,0,0,0,9,50,50,6,0,0,0,62,50,3,0,0,0,0,0,1,41,45,23,5,Arabic
+0,0,88,0,0,0,0,0,0,0,88,0,0,0,0,0,0,88,0,0,0,0,0,0,0,0,88,0,0,0,0,0,0,0,0,88,0,0,0,0,41,45,2,0,0,0,0,0,30,58,0,0,0,0,0,0,44,41,3,0,0,0,0,0,74,14,0,0,0,0,0,0,53,35,0,0,0,0,0,0,31,52,5,0,0,0,0,0,16,68,4,0,0,0,0,0,20,64,4,0,0,0,0,0,59,29,0,0,0,0,0,0,45,42,1,0,0,0,0,0,0,51,36,1,0,0,0,0,1,4,54,28,1,0,0,0,0,4,5,38,39,2,0,0,0,0,65,22,1,0,0,0,0,0,19,62,7,0,0,0,Romanian
+0,34,78,9,1,0,2,0,0,26,89,6,1,1,1,0,0,26,90,4,2,0,2,0,0,103,18,1,0,1,1,0,0,94,26,2,1,1,0,0,0,28,81,13,0,2,0,0,2,46,74,0,2,0,0,0,0,80,39,2,1,2,0,0,0,33,89,1,1,0,0,0,0,7,45,68,4,0,0,0,40,71,7,3,2,1,0,0,40,78,0,4,2,0,0,0,29,89,0,2,3,1,0,0,5,95,22,1,1,0,0,0,0,6,59,59,0,0,0,0,0,36,76,9,1,2,0,0,0,38,79,4,1,2,0,0,0,28,89,3,2,2,0,0,0,32,87,3,2,0,0,0,0,5,110,6,3,0,0,0,Arabic
+0,0,17,45,40,13,3,0,0,0,1,39,59,13,6,0,0,0,0,2,49,53,10,4,0,1,50,65,2,0,0,0,0,30,66,22,0,0,0,0,0,17,75,21,2,3,0,0,1,39,59,16,3,0,0,0,0,29,71,17,0,1,0,0,10,104,4,0,0,0,0,0,16,97,5,0,0,0,0,0,0,18,81,15,2,2,0,0,0,21,78,17,2,0,0,0,0,14,78,25,1,0,0,0,10,98,10,0,0,0,0,0,59,59,0,0,0,0,0,0,0,1,16,39,48,12,1,1,0,0,4,37,59,14,3,1,0,0,0,5,49,54,7,3,0,0,20,92,6,0,0,0,0,8,78,31,1,0,0,0,Arabic
+0,3,65,37,2,0,8,6,0,1,68,37,1,2,6,6,0,1,82,22,2,2,7,5,0,0,70,36,1,5,5,4,0,0,10,82,14,7,5,3,2,31,59,15,3,5,4,2,0,28,71,8,5,6,1,2,2,43,59,2,7,4,2,2,4,53,45,5,6,6,1,1,3,71,27,6,9,3,1,1,0,17,84,6,1,1,8,4,1,22,80,4,1,7,4,2,2,86,18,1,1,7,4,2,30,76,1,1,0,9,3,1,26,80,1,1,3,6,3,1,0,0,30,62,15,0,5,9,0,3,55,48,1,1,7,6,0,4,68,35,0,1,8,5,0,3,101,3,0,3,6,5,0,1,74,32,0,3,7,4,Romanian
+0,31,75,10,4,0,0,0,0,0,86,31,3,0,0,0,0,1,7,107,5,0,0,0,0,4,111,5,0,0,0,0,0,2,82,36,0,0,0,0,0,21,67,28,4,0,0,0,3,37,69,10,1,0,0,0,6,56,46,10,2,0,0,0,16,75,27,2,0,0,0,0,16,81,21,2,0,0,0,0,1,93,13,9,4,0,0,0,23,88,6,2,1,0,0,0,37,78,2,3,0,0,0,0,52,59,9,0,0,0,0,0,22,90,6,2,0,0,0,0,0,31,70,10,9,0,0,0,0,2,77,38,3,0,0,0,0,0,19,100,1,0,0,0,0,4,107,9,0,0,0,0,0,25,70,22,3,0,0,0,Indonesian
+0,0,0,0,129,9,0,0,0,0,0,0,79,59,0,0,0,0,0,0,0,138,0,0,0,0,0,0,122,16,0,0,0,0,0,0,93,45,0,0,0,0,0,82,52,4,0,0,0,0,0,13,123,2,0,0,0,0,0,0,134,4,0,0,0,0,0,10,127,1,0,0,0,0,0,3,133,2,0,0,2,5,1,46,82,0,0,0,5,2,1,45,45,38,0,0,2,4,1,1,101,27,0,0,2,4,1,2,45,82,0,0,0,6,1,1,46,17,65,0,0,0,0,0,133,5,0,0,0,0,0,0,77,61,0,0,0,0,0,0,0,138,0,0,0,0,0,0,99,39,0,0,0,0,0,0,64,74,0,0,Indonesian
+0,1,17,32,8,6,0,0,0,0,5,26,24,7,2,0,0,0,0,2,30,26,6,0,0,0,0,3,35,25,1,0,0,0,0,3,29,26,4,2,7,26,18,7,4,1,1,0,6,29,16,9,3,1,0,0,12,30,22,0,0,0,0,0,0,19,35,10,0,0,0,0,4,28,31,1,0,0,0,0,2,19,25,12,2,0,3,1,7,23,20,9,4,1,0,0,13,24,25,2,0,0,0,0,2,24,35,3,0,0,0,0,20,31,11,1,1,0,0,0,0,1,22,24,11,3,3,0,0,0,5,28,24,5,0,2,0,0,0,3,28,24,5,4,0,0,0,1,15,45,3,0,0,0,0,0,5,33,24,2,Francais
+0,2,9,22,10,10,5,5,0,0,0,13,26,10,8,6,0,0,0,3,18,28,13,1,0,0,0,7,37,16,3,0,0,0,1,17,33,10,2,0,8,26,6,7,14,2,0,0,1,18,22,16,6,0,0,0,4,23,31,5,0,0,0,0,1,26,34,2,0,0,0,0,1,34,25,3,0,0,0,0,4,13,16,10,10,9,1,0,1,11,23,16,7,5,0,0,0,19,31,12,1,0,0,0,0,23,34,6,0,0,0,0,17,32,14,0,0,0,0,0,0,0,14,20,14,7,7,1,0,0,0,9,35,6,6,7,0,0,0,4,25,26,7,1,0,0,0,1,27,23,11,1,0,0,0,3,29,23,7,1,Francais
+0,2,19,12,14,12,1,0,0,2,17,34,7,0,0,0,0,0,1,15,33,6,3,2,0,0,1,24,28,6,1,0,0,0,0,7,33,16,4,0,12,32,11,4,1,0,0,0,19,34,6,1,0,0,0,0,3,33,18,4,1,1,0,0,25,35,0,0,0,0,0,0,4,51,5,0,0,0,0,0,1,23,25,9,2,0,0,0,4,31,18,5,2,0,0,0,1,20,30,4,4,0,1,0,0,10,43,7,0,0,0,0,0,1,9,44,6,0,0,0,0,4,15,10,18,8,5,0,0,1,27,26,5,1,0,0,0,0,5,19,20,11,3,2,0,0,0,38,21,1,0,0,0,0,0,20,37,3,0,0,Francais
+0,1,15,32,5,6,0,0,0,0,15,28,11,5,0,0,0,4,6,23,17,7,2,0,0,1,24,32,2,0,0,0,0,0,23,36,0,0,0,0,0,0,0,6,20,23,10,0,0,2,13,8,9,16,10,1,1,6,10,7,11,18,4,2,0,28,27,4,0,0,0,0,1,25,32,1,0,0,0,0,6,12,10,13,9,6,3,0,4,9,12,12,14,6,2,0,4,7,14,10,12,10,0,2,20,28,11,0,0,0,0,0,21,36,2,0,0,0,0,0,0,3,24,23,4,5,0,0,0,0,20,25,7,7,0,0,0,2,4,18,20,8,5,2,0,5,32,19,3,0,0,0,0,2,39,17,1,0,0,0,Francais
+1,8,13,9,20,9,0,0,0,2,9,15,13,10,10,1,0,0,1,7,21,21,6,4,0,5,33,12,4,2,4,0,0,22,25,9,3,1,0,0,1,3,13,19,18,5,1,0,0,3,14,14,16,10,2,1,0,1,13,18,17,9,2,0,0,0,0,43,17,0,0,0,0,0,1,59,0,0,0,0,1,6,12,21,17,3,0,0,0,4,12,25,10,8,1,0,0,6,12,29,11,0,2,0,3,36,20,1,0,0,0,0,13,47,0,0,0,0,0,0,5,10,8,12,20,5,0,0,0,1,6,17,18,13,5,0,0,0,2,3,14,26,15,0,0,12,39,7,2,0,0,0,1,38,18,3,0,0,0,0,Arabic
+0,0,4,27,22,5,3,1,0,0,1,7,24,17,10,3,0,0,5,8,13,23,9,4,0,0,6,23,24,8,1,0,0,0,1,19,32,10,0,0,0,4,16,8,11,9,10,4,5,9,13,8,11,7,7,2,7,20,23,10,2,0,0,0,0,1,13,37,11,0,0,0,0,0,7,27,22,5,1,0,0,12,16,6,8,5,11,4,4,21,10,8,3,5,9,2,10,39,11,0,2,0,0,0,3,30,26,3,0,0,0,0,3,22,31,6,0,0,0,0,0,0,4,28,21,3,5,1,0,0,3,16,30,5,4,4,0,0,1,5,26,23,7,0,1,2,14,28,17,0,0,0,0,1,12,20,22,6,1,0,Arabic
+0,10,22,22,3,3,0,0,0,0,8,29,18,5,0,0,0,0,1,8,19,21,8,3,0,0,5,34,15,6,0,0,0,7,27,21,4,1,0,0,0,0,60,0,0,0,0,0,60,0,0,0,0,0,0,0,60,0,0,0,0,0,0,0,60,0,0,0,0,0,0,0,60,0,0,0,0,0,0,0,0,0,0,8,21,21,8,2,0,1,5,15,23,13,2,1,0,0,5,13,15,16,7,4,0,4,20,17,18,1,0,0,2,16,30,12,0,0,0,0,2,8,28,15,6,1,0,0,0,4,21,25,3,6,1,0,0,2,7,22,18,7,4,0,0,0,30,30,0,0,0,0,0,5,45,10,0,0,0,0,Guinee

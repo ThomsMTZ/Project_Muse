@@ -121,8 +121,9 @@ SohaibF2<- c(0,1,9,8,25,15,3,0,0,2,3,14,25,12,5,0,0,2,9,9,12,22,7,0,0,0,16,23,13
 SohaibF3<- c(0,0,10,11,19,11,9,1,0,1,6,9,20,13,10,2,0,0,2,6,17,22,6,8,0,0,10,34,12,5,0,0,0,10,28,17,4,2,0,0,4,2,6,16,19,12,2,0,2,4,15,7,19,14,0,0,1,6,9,10,23,12,0,0,0,0,4,55,2,0,0,0,0,0,40,21,0,0,0,0,3,4,5,10,16,10,12,1,5,5,3,12,11,16,8,1,2,6,6,11,16,18,2,0,3,17,33,8,0,0,0,0,19,34,8,0,0,0,0,0,0,4,12,12,15,9,9,0,0,2,4,16,19,10,8,2,0,1,5,4,20,19,9,3,0,0,22,30,8,1,0,0,0,20,37,4,0,0,0,0)
 SohaibF4<- c(0,2,3,12,24,12,5,3,0,5,5,18,14,13,5,1,0,2,6,17,13,11,8,4,0,0,3,8,18,29,2,1,0,0,6,7,33,13,2,0,0,3,4,9,16,15,12,2,1,3,4,10,27,8,8,0,1,4,5,9,17,22,3,0,0,0,15,38,5,3,0,0,0,1,47,12,1,0,0,0,1,4,5,9,13,19,9,1,0,8,8,7,16,15,7,0,1,6,11,9,17,14,3,0,2,32,19,6,2,0,0,0,14,39,5,3,0,0,0,0,0,2,6,10,24,13,4,2,0,3,5,18,16,11,7,1,0,4,3,15,16,10,11,2,0,0,8,17,20,13,1,2,0,5,19,17,6,11,3,0)
 
+
 # Cette fonction permet de tester la corrélation entre deux enregistrements
-# On utilise les méthodes de Pearon et Spearman implantées dans R
+# On utilise les méthodes de Pearson et Spearman implantées dans R
 
 correlation_simple <- function(X,Y){
   res <- c(cor(X,Y, method="pearson"),cor(X,Y,method="spearman"))
@@ -182,6 +183,40 @@ correlation_personne <- function(name,origine){
   rownames(res)<-countries
   colnames(res)<-c("1 & 2","1 & 3","1 & 4","2 & 3","2 & 4","3 & 4")
   hist(res,xlab="correlation",ylab="nombre")
+  print(mean(res))
+  return (res)
+  
+}
+
+
+# Cette fonction calcule toutes les corrélations possibles entre deux enregistrements d'une personne
+# On calcule même pour les chansons de langues différentes
+  
+correlation_personne_langue <- function(name,origine){
+  res <-matrix(nrow=10,ncol=6)
+  countries <- c()
+  if(origine == "F")
+    countries <-c("C","G","V","M")
+  else if(origine == "M") 
+    countries <-c("C","G","V","F")
+  else if(origine == "G") 
+    countries <-c("C","F","V","M")
+  cpt = 1
+  for(pays in 1:4){
+    for(pays2 in pays:4){
+      cpt2 = 1
+      for(i in 1:3){
+        for(j in (i+1):4){
+          res[cpt,cpt2] <- cor(get(paste0(name,as.character(countries[pays]),as.character(i))),get(paste0(name,as.character(countries[pays2]),as.character(j))), method="pearson")
+          cpt2 = cpt2+1
+        }
+      }
+      cpt = cpt+1
+    }
+  }
+  colnames(res)<-c("1 & 2","1 & 3","1 & 4","2 & 3","2 & 4","3 & 4")
+  hist(res,xlab="correlation",ylab="nombre")
+  print(mean(res))
   return (res)
   
 }
@@ -199,6 +234,7 @@ correlation_chanson <- function(name1,name2,chanson){
   return (res)
 }
 
+
 # Cette fonction calcule les corrélations entre deux personnes sur les mêmes chansons sur une langue
 
 correlation_langue <- function(name1,name2,country){
@@ -207,6 +243,7 @@ correlation_langue <- function(name1,name2,country){
     res[i] <- cor(get(paste0(name1,country,i)),get(paste0(name2,country,i)), method="pearson")
   }
   hist(res,xlab="correlation",ylab="nombre")
+  print(mean(res))
   return(res)
 }
 
@@ -234,7 +271,7 @@ correlation_2personnes <- function(name1,name2,country1,country2){
   
   rownames(res) <- c("France","Chine","Guinée","Vietnam","Maghreb")
   hist(res,xlab="correlation",ylab="nombre")
-  
+  print(mean(res))
   return(res)
 }
 

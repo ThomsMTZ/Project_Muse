@@ -144,3 +144,31 @@ max,1.2492123,1.1434772,1.6127019,1.2411367,1.219614
 mean,0.343690429032787,0.290843808688525,1.06345674262295,0.991372229508197,0.855498136065574
 Std Dev,0.354956423423877,0.233597663584811,0.250944574300743,0.123643584051368,0.171598936629087
 
+
+	Pearson's product-moment correlation
+
+data:  GeoffreyC1 and GeoffreyC2
+t = 23.512, df = 158, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.8419265 0.9122208
+sample estimates:
+      cor 
+0.8818829 
+
+
+	Pearson's product-moment correlation
+
+data:  GeoffreyC1 and GeoffreyC2
+t = 23.512, df = 158, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.8419265 0.9122208
+sample estimates:
+      cor 
+0.8818829 
+
+function (save = "default", status = 0, runLast = TRUE) 
+.Internal(quit(save, status, runLast))
+<bytecode: 0x00000215ae1eb358>
+<environment: namespace:base>

@@ -1,5 +1,5 @@
 rm(list=ls(all=TRUE))
-chemin = "D:/FDOS/Geoffrey/Documents/POLYTECH Marseille/4A/Projet Muse/Projet-MuseV1/src/Brainwave-master/Data/"
+chemin = "C:/Users/trist/OneDrive/Documents/GitHub/Project_Muse/Projet-Muse-master/Data/"
 annotname ="Halima"
 pays="_Francais"
 annotfolder = annotname
